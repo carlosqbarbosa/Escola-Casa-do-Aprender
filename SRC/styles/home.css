@@ -1,0 +1,237 @@
+#home {
+    /*
+    display: flex;
+    padding: 2% 8px;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    */
+    display: flex;
+    flex-wrap: wrap; /* Adapta o layout em telas menores */
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #f5f5f5; /* Fundo suave */
+    border-radius: 20px;
+   /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+} 
+#cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-items: center;
+}
+
+/*
+} <!--#cta .title {
+    font-size: 2rem;
+    color: #1d1d1d;
+}
+
+#cta .descreption {
+    font-size: 1.2rem;
+    color: #333; /* Melhor contraste */ 
+
+#cta .title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+#cta .description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #a4c9a4; 
+    color: #000000; 
+    padding: 10px 18px; /* Maior área clicável */
+    font-weight: 500;
+    text-decoration: none; 
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.phone_button:hover {
+    background-color: #76ae72; 
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.phone_button i {
+    font-size: 1.2rem;
+}
+
+.phone_button span {
+    font-weight: bold;
+}
+
+#banner {
+    /*
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 70%;
+    z-index: 2;
+    */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: relative; /* Para controlar posicionamento interno */
+    width: 100%; /* Ocupa a largura completa */
+    height: auto; /* Ajusta automaticamente a altura */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse */
+    z-index: 2;
+}
+
+#banner img {
+    /*
+    height: auto;
+    max-width: 100%; /* Garantir responsividade */
+   
+   /* height:500px;
+    width:500px;
+    left:720px;
+    top: 30px;
+    position:absolute;
+    */
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    max-height: 500px; /* Limita a altura máxima */
+    object-fit: cover; /* Ajusta a imagem para ocupar o espaço sem distorcer */
+    position: relative; /* Posição relativa para alinhamento natural */
+    margin: 0;
+    justify-items: left;
+    border-radius: 60px;
+}
+
+/*
+.shape {
+    background-color: #9fbd9f;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1; 
+}
+    */
+
+@media screen and (max-width: 1170px) {
+    #home {
+       flex-direction: column; /* Ajuste de layout */
+       padding: 20px 8px;
+    }
+
+    #banner, 
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cta .title {
+        font-size: 1.8rem; /* Reduzir tamanho do texto */
+    }
+
+    #cta_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+#cursos-infantil {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cursos-infantil .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cursos-infantil h2 {
+    font-size: 2.5em;
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+#cursos-infantil .highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#cursos-infantil .highlight {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#cursos-infantil .highlight:hover {
+    transform: scale(1.05); /* Destaque ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#cursos-infantil .highlight img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#cursos-infantil .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #2e8b57;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#cursos-infantil .cta-button:hover {
+    background-color: #246b45;
+}

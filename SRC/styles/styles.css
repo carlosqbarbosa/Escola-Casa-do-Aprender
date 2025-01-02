@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #a4c9a4;
+    --primary-hover-color: #76ae72;
+    --background-color: #f5f5f5;
+    --text-color: #1d1d1d;
+   /* --button-shadow: rgba(0, 0, 0, 0.1); */
+}
+
+/* Reset and Base */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+section {
+    padding: 2% 8px;
+}
+
+/* Buttons */
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0px 0px 10px 2px var(--button-shadow);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.btn-default:focus {
+    outline: 2px solid var(--primary-hover-color);
+}
+
+/* Social Media Buttons */
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0px 0px 12px 4px var(--button-shadow);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px var(--button-shadow);
+    transform: scale(1.1);
+}
+
+.social-media-buttons a:focus {
+    outline: 2px solid var(--primary-hover-color);
+}
