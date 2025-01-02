@@ -1,0 +1,205 @@
+#home {
+  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #f5f5f5; 
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+} 
+#cta {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 50%;
+}
+
+
+#cta .title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+#cta .description {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #a4c9a4; 
+    color: #000000; 
+    padding: 10px 18px; 
+    font-weight: 500;
+    text-decoration: none; 
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.phone_button:hover {
+    background-color: #76ae72; 
+    transform: scale(1.05); 
+}
+
+.phone_button i {
+    font-size: 1.2rem;
+}
+
+.phone_button span {
+    font-weight: bold;
+}
+
+#banner {
+
+    
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    max-width: 50%; 
+    
+}
+
+#banner img {
+   
+    max-width: 100%; 
+    max-height: 500px; 
+    object-fit: cover; 
+    border-radius: 60px;
+}
+
+
+/* RESPONSIVIDADE*/    
+@media screen and (max-width: 1170px) {
+    #home {
+       flex-direction: column; 
+       padding: 20px 8px;
+    }
+
+    #banner {
+        max-width: 100%; 
+        margin-top: 20px;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #cta .title {
+        font-size: 1.8rem; 
+    }
+
+    #cta_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+#cursos-infantil {
+    background: linear-gradient(to bottom, #f9f9f9, #e8f5e9);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cursos-infantil .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#cursos-infantil h2 {
+    font-size: 2.5em;
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+#cursos-infantil .highlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#cursos-infantil .highlight {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cursos-infantil .highlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#cursos-infantil .highlight img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#cursos-infantil .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #2e8b57;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#cursos-infantil .cta-button:hover {
+    background-color: #246b45;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #cursos-infantil .highlight {
+        flex: 1 1 100%;
+    }
+}
+
+
