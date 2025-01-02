@@ -1,0 +1,18 @@
+# Arquivos do sistema
+*.log
+*.tmp
+desktop.ini
+
+# Diretórios irrelevantes
+/.vscode/
+/.idea/
+/node_modules/
+/AppData/
+/OneDrive/
+/Documents/
+/Videos/
+/Music/
+
+# Arquivos e pastas específicos
+NTUSER.*
+*.lnk
