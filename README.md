@@ -28,4 +28,4 @@ Este projeto foi idealizado como uma oportunidade para:
 
 ---
 
-Desenvolvido por [Carlos Barbpsa](https://github.com/carlosqbarbosa).
+Desenvolvido por [Carlos Barbosa](https://github.com/carlosqbarbosa).
